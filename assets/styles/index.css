@@ -1,0 +1,150 @@
+:root {
+    --font-family: 'Rubik', 'sans-serif';
+    --primary-color: #90E051;
+    --secondary-color: #FFF500;
+    --tertiary-color: #F9F9F9;
+    --black-color: #000;
+    --white-color: #FFF;
+
+    --base-font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+}
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.83rem;
+}
+
+.filled-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 246px;
+    height: 88px;
+    border-radius: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 65px 0;
+    min-width: 1000px;
+}
+
+header .menu {
+    width: 540px;
+}
+
+header .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--quaternary-color);
+    font-size: 1.56rem;
+    line-height: 2.62rem;
+}
+
+.menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+header .actions {
+    position: absolute;
+    right: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 121px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+main .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 670px;
+}
+
+main .title h1, main .title span {
+    font-weight: 700;
+    font-size: 7.25rem;
+    line-height: 8rem;
+}
+
+main .title p {
+    margin-top: 20px;
+    font-size: 1.56rem;
+    line-height: 2.62rem;
+}
+
+main .title .buttons {
+    display: flex;
+    gap: 45px;
+    margin-top: 62px;
+}
+
+main .burguer {
+    position: relative;
+}
+
+main .burguer::after {
+    content: '';
+    display: block;
+    width: 640px;
+    height: 640px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: -80px;
+}
+
+main .burguer img {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    transform: scale(1.1);
+}
+
+main .burguer .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
