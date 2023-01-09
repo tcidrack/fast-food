@@ -148,3 +148,25 @@ main .burguer .price{
     left: 0;
     z-index: 2;
 }
+
+.teaser {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 244px;
+    margin: 100px 0;
+    fill: solid #fff;
+}
+
+.teaser-icons {
+    width: 876.43px;
+    height: 157.42px;
+}
+
+/*
+.opitions-table {
+    width: 686.24px;
+    height: 748.25px;
+    background: linear-gradient(#FFFFFF, #90E051);
+    border-radius: 69.08px;
+}
