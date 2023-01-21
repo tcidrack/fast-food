@@ -165,14 +165,66 @@ main .burguer .price{
     grid-gap: 0 70px;
     margin-top: 205px;
     fill: solid #fff;
+    margin-bottom: 100px;
 }
 
-.logo-chef-icons, .logo-burguer, .logo-cutlery, .logo-pizza, .text-icons {
+.logo-teaser, .text-icons {
     justify-self: center;
     text-align: center;
+    cursor: pointer;
+}
+
+.logo-teaser {
+    transform: scale(0.9);
+    transition: ease 0.3;
+}
+
+.logo-teaser:hover {
+    transform: scale(1);
 }
 
 .teaser p {
     font-weight: 600;
     line-height: 21.26px;
 }
+
+.order-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.order-menu .big-burger-left {
+    position: relative;
+}
+
+.big-burger-left::after {
+    content: '';
+    display: block;
+    width: 629px;
+    height: 600px;
+    border-radius: 50%;
+    border: 2px dashed var(--primary-color);
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+    left: -27px;
+}
+
+.big-burger-left img {
+    position: relative;
+    left: -157px;
+    z-index: 1;
+    margin-top: 50px;
+    transform: scale(1.1);
+}
+
+/*
+.menu-ordering-options {
+    display: grid;
+    grid-template-columns: ;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+*/
