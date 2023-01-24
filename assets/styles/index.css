@@ -85,6 +85,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    height: 748.11px;
 }
 
 main .title {
@@ -158,10 +159,7 @@ main .burguer .price{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 244px;
-    margin-top: 205px;
-    margin-bottom: 100px;
 }
 
 .icon-box {
@@ -171,7 +169,6 @@ main .burguer .price{
     grid-template-rows: 164.15px;
     grid-gap: 0 70px;
     fill: solid #fff;
-    
 }
 
 .logo-teaser, .text-icons {
@@ -196,47 +193,69 @@ main .burguer .price{
 .order-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    height: 830px;
 }
 
-.order-menu .big-burger-left {
+
+.order-menu .burguer-left {
     position: relative;
 }
 
-.big-burger-left::after {
+.order-menu .burguer-left::after {
     content: '';
     display: block;
-    width: 629px;
-    height: 600px;
+    width: 639px;
+    height: 610px;
     border-radius: 50%;
     border: 2px dashed var(--primary-color);
     position: absolute;
     z-index: -1;
-    bottom: -30px;
-    left: -27px;
+    top: 0;
+    left: -30px;
 }
 
 .big-burger-left img {
     position: relative;
     left: -157px;
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 60px;
     transform: scale(1.1);
 }
 
 .menu-box {
     position: absolute;
     left: 530px;
-    margin-top: 130px;
+    margin-top: -400px;
     background-color: var(--primary-color);
     color: var(--white-color);
-    width: 145.89px;
-    height: 135.59px;
+    width: 130.89px;
+    height: 120.59px;
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 55.897px;
-    line-height: 66px;
+    font-size: 45.897px;
+    line-height: 56px;
     z-index: 2;
+}
+
+.top-small-burger img {
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    left: 450px;
+    z-index: 2;
+    margin-top: -550px;
+}
+
+.bottom-small-burger img {
+    position: absolute;
+    width: 152px;
+    height: 120px;
+    left: 520px;
+    z-index: 2;
+    margin-top: -220px;
 }
 
 /*
