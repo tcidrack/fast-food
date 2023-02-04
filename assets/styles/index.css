@@ -196,6 +196,7 @@ main .burguer .price{
     grid-template-rows: 1fr;
     align-items: center;
     height: 830px;
+    margin-bottom: 500px;
 }
 
 
@@ -258,13 +259,84 @@ main .burguer .price{
     margin-top: -220px;
 }
 
-/*
+
 .menu-ordering-options {
     display: grid;
-    grid-template-columns: ;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: end;
+    width: 686.24px;
+    height: 748.25px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #90E051 116.84%);
+    box-shadow: 0px 17.2708px 107.943px -21.5886px rgba(0, 0, 0, 0.25);
+    border-radius: 69.08px;
+    margin: 65px 150px 126px 0;
 }
-*/
+
+.menu-burguer {
+    position: absolute;
+    width: 152px;
+    height: 120px;
+    margin: 20px 80px 0;
+}
+
+.review .menu-burguer::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 150px;
+    background: var(--primary-color);
+    position: absolute;
+}
+
+.button-options-table {
+    position: absolute;
+    width: 265.17px;
+    height: 63.01px;
+    right: 350px;
+    margin-top: 100px;
+    background: var(--white-color);
+    border-radius: 17.5px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.3521px;
+    line-height: 26px;
+    letter-spacing: -0.025em;
+}
+
+.review {
+    width: 100%;
+    height: 940px;
+}
+
+.review h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #333333;
+    margin: 0 200px 0 203px;
+}
+
+.p-review {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 200px 0 203px;
+    width: 675px;
+    height: 121px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.1522px;
+    line-height: 30px;
+    color: #828282;
+}
+
+
+.img-review {
+    display: inline-block;
+    width: 695.3px;
+    height: 534.85px;
+    background-image: url(burguer-review.png);
+    border-radius: 10.6969px;
+}
